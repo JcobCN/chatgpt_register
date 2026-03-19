@@ -11,6 +11,8 @@ AI-Account-Toolkit/
 ├── CPAtools/                # Codex 账号管理工具
 ├── GPT-team/                # GPT 团队全自动注册工具
 ├── chatgpt_register_duckmail/ # DuckMail 注册工具
+├── GPT_register+duckmail+CPA+autouploadsub2api/ # DuckMail + OAuth + Sub2Api 注册工具
+├── team_all-in-one/         # ChatGPT Team 一键注册工具
 ├── codex/                   # Codex 相关工具
 ├── freemail/                # 临时邮箱服务
 ├── merge-mailtm-share/      # MailTM 邮箱合并工具
@@ -18,6 +20,7 @@ AI-Account-Toolkit/
 ├── openai_pool_orchestrator_v5/ # OpenAI 账号池管理工具
 ├── openai_pool_orchestrator-V6/ # OpenAI 账号池编排器（新版本）
 ├── ClashVerge_              # ClashVerge 非港轮询脚本
+├── ABCard/                  # ChatGPT Business/Plus 自动开通工具（子模块）
 ├── any-auto-register/        # 多平台账号自动注册工具（子模块）
 └── cloudflare_temp_email/    # Cloudflare 临时邮箱服务（子模块）
 ```
@@ -56,7 +59,32 @@ AI-Account-Toolkit/
 
 **使用指南**：[chatgpt_register_duckmail/README.md](chatgpt_register_duckmail/README.md)
 
-### 4. codex
+### 4. GPT_register+duckmail+CPA+autouploadsub2api - DuckMail + OAuth + Sub2Api 注册工具
+
+**功能**：使用 DuckMail 临时邮箱进行 ChatGPT 批量并发注册，支持 OAuth 自动登录获取 Token，可选自动上传 Token 到 Sub2Api 平台。
+
+**主要文件**：
+- `chatgpt_register.py` - 主注册脚本（并发版）
+- `server.py` - FastAPI Web 管理服务
+- `config.json` - 配置文件
+- `web/` - Web 前端界面
+
+**使用指南**：[GPT_register+duckmail+CPA+autouploadsub2api/README.md](GPT_register+duckmail+CPA+autouploadsub2api/README.md)
+
+### 5. team_all-in-one - ChatGPT Team 一键注册工具
+
+**功能**：功能完整的 Web 管理界面，用于批量注册 ChatGPT Team 账号。支持多种临时邮箱服务、代理配置、OAuth 自动授权，以及 Token 导出功能。
+
+**主要文件**：
+- `app.py` - Flask Web 服务主程序
+- `config_loader.py` - 配置加载器
+- `config.json` - 配置文件
+- `static/` - 静态资源
+- `templates/` - 前端模板
+
+**使用指南**：[team_all-in-one/README.md](team_all-in-one/README.md)
+
+### 6. codex
 
 **功能**：Codex 相关工具，包含协议密钥生成等功能。
 
@@ -66,7 +94,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[codex/README.md](codex/README.md)
 
-### 5. freemail - 临时邮箱服务
+### 7. freemail - 临时邮箱服务
 
 **功能**：基于 Cloudflare Worker 的临时邮箱服务，支持邮箱管理、邮件转发等功能。
 
@@ -77,7 +105,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[freemail/README.md](freemail/README.md)
 
-### 6. merge-mailtm-share - MailTM 邮箱合并工具
+### 8. merge-mailtm-share - MailTM 邮箱合并工具
 
 **功能**：合并和管理 MailTM 临时邮箱，支持批量操作和状态管理。
 
@@ -88,7 +116,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[merge-mailtm-share/README.md](merge-mailtm-share/README.md)
 
-### 7. ob12api - OB12 API 服务
+### 9. ob12api - OB12 API 服务
 
 **功能**：提供 OB12 相关的 API 服务，支持账号注册和管理。
 
@@ -99,7 +127,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[ob12api/README.md](ob12api/README.md)
 
-### 8. openai_pool_orchestrator_v5 - OpenAI 账号池管理工具
+### 10. openai_pool_orchestrator_v5 - OpenAI 账号池管理工具
 
 **功能**：管理 OpenAI 账号池，支持自动注册、维护和使用。
 
@@ -110,7 +138,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[openai_pool_orchestrator_v5/README.md](openai_pool_orchestrator_v5/README.md)
 
-### 9. openai_pool_orchestrator-V6 - OpenAI 账号池编排器（新版本）
+### 11. openai_pool_orchestrator-V6 - OpenAI 账号池编排器（新版本）
 
 **功能**：OpenAI 账号池编排器，支持自动化注册、Token 管理与多平台账号池维护。
 
@@ -121,7 +149,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[openai_pool_orchestrator-V6/README.md](openai_pool_orchestrator-V6/README.md)
 
-### 10. ClashVerge_ - ClashVerge 非港轮询脚本
+### 12. ClashVerge_ - ClashVerge 非港轮询脚本
 
 **功能**：为 ClashVerge 设计的全局扩写脚本，创建非香港节点的负载均衡组，用于注册机等场景。
 
@@ -131,7 +159,7 @@ AI-Account-Toolkit/
 
 **使用指南**：[ClashVerge_/README.md](ClashVerge_/README.md)
 
-### 11. any-auto-register - 多平台账号自动注册工具
+### 13. any-auto-register - 多平台账号自动注册工具
 
 **功能**：多平台账号自动注册工具，支持 ChatGPT、Cursor、Kiro 等多个平台。
 
@@ -143,7 +171,20 @@ AI-Account-Toolkit/
 
 **使用指南**：[any-auto-register/README.md](any-auto-register/README.md)
 
-### 12. cloudflare_temp_email - Cloudflare 临时邮箱服务
+### 14. ABCard - ChatGPT Business/Plus 自动开通工具
+
+**功能**：全自动注册 ChatGPT 账号 + 开通 Business 或 Plus 套餐（首月免费），支持 Web UI 操作。
+
+**主要文件**：
+- `ui.py` - Streamlit Web 界面
+- `auth_flow.py` - 账号注册流程
+- `browser_payment.py` - 浏览器支付模块
+- `admin_cli.py` - 兑换码管理工具
+- `config.example.json` - 配置模板
+
+**使用指南**：[ABCard/README.md](ABCard/README.md)
+
+### 14. cloudflare_temp_email - Cloudflare 临时邮箱服务
 
 **功能**：基于 Cloudflare 免费服务构建的临时邮箱服务，支持邮件收发、附件处理等功能。
 
@@ -173,13 +214,18 @@ done
 
 ### 2. 初始化子模块
 
-本项目包含两个子模块，需要初始化：
+本项目包含三个子模块，需要初始化：
 
 ```bash
 # 初始化子模块
 git submodule init
 git submodule update
 ```
+
+子模块列表：
+- `any-auto-register/` - 多平台账号自动注册工具
+- `cloudflare_temp_email/` - Cloudflare 临时邮箱服务
+- `ABCard/` - ChatGPT Business/Plus 自动开通工具
 
 ### 3. 配置设置
 

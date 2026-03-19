@@ -4,3 +4,6 @@
 [submodule "cloudflare_temp_email"]
 	path = cloudflare_temp_email
 	url = https://github.com/dreamhunter2333/cloudflare_temp_email.git
+[submodule "ABCard"]
+	path = ABCard
+	url = https://github.com/kaima2022/ABCard.git
