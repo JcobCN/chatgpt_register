@@ -1,12 +1,15 @@
 {
   "_comment": "ChatGPT 批量自动注册工具配置文件 (DuckMail 临时邮箱版)",
 
-  "total_accounts": 3,
+  "total_accounts": 10,
 
   "duckmail_api_base": "https://api.duckmail.sbs",
-  "duckmail_bearer": "",
+  "duckmail_bearer": "seyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzNiNjcwZGJkZmU3YTg0MTNkNzdhZGUwZDM1ZmQwZjgiLCJhZGRyZXNzIjoiMmY5bVRielE0TkBkdWNrbWFpbC5zYnMiLCJhdXRoX3R5cGUiOiJlbWFpbCIsImV4cCI6MTgwNTIxMDM3OCwiaWF0IjoxNzczNjc0Mzc4fQ.fF_Ow6Hd-rsz55RQAhkXjgnKHcFgFZle_qS2tnR_8hE",
 
-  "proxy": "",
+  "proxy": "http://127.0.0.1:7890",
 
-  "output_file": "registered_accounts.txt"
+  "output_file": "registered_accounts.txt",
+
+  "upload_api_url": "http://127.0.0.1:8317/v0/management/auth-files",
+  "upload_api_token": "okok"
 }
