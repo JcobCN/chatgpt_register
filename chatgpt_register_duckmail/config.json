@@ -8,6 +8,7 @@
 
   "proxy": "http://127.0.0.1:7890",
 
+  "output_table": "openai_accounts.tsv",
   "output_file": "registered_accounts.txt",
 
   "upload_api_url": "http://127.0.0.1:8317/v0/management/auth-files",
